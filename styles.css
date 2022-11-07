@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-inputs-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+}
+body > div {
+    width: 35%;
+    height: 100%;
+}
+
+body > div > img {
+    height: 100%;
+    width: 100%;
+}
+
+body > div > div {
+    background-color: #00000096;
+    position: absolute;
+    margin: 30% 70%;
+}
