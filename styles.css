@@ -60,8 +60,6 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0px;
-    min-height: 100%;
-    width: 100%;
     background-color: #f9fafb;
     font-family: sans-serif, Tahoma, Geneva, Verdana;
 }
@@ -77,14 +75,13 @@ body {
     flex-direction: column;
 }
 body > div {
-    width: 35%;
     height: 100%;
     position: relative;
 }
 
 body > div > img {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 570.2px;
     position: relative;
 }
 
@@ -94,6 +91,7 @@ body > div > img {
     width: 100%;
     height: 20%;
     top: 25%;
+    min-width: 570.2px;
 }
 
 body > div > div > img {
@@ -106,7 +104,7 @@ body > div > div > img {
 .logo {
     color: white;
     font-family: Norse-Bold;
-    font-size: 8.5rem;
+    font-size: calc(2vw + 9vh + 4vmin);
     position: absolute;
     left: 45%;
     top: 13%;
@@ -124,17 +122,18 @@ button[type="submit"] {
     color: white;
     font-weight: bold;
 }
+
 button[type="submit"]:hover {
     background-color: #38442d;
     cursor: pointer;
 }
 
 header > div:first-child {
-    margin: 17.5% 1vw 5% 15%;
+    margin: 17.5% 1vw 5% 5%;
 }
 
 header > div:nth-child(2) {
-    margin: 0% 1vw 10% 15%;
+    margin: 0% 1vw 10% 5%;
 }
 
 header > div {
@@ -144,7 +143,7 @@ header > div {
 
 fieldset > div:first-child {
     background-color: white;
-    width: 100vw;
+    width: 100%;
     padding-bottom: 35px;
 }
 
@@ -167,7 +166,8 @@ label {
     margin-bottom: 2px;
 }
 
-input[type="text"] {
+input[type="text"]:valid, input[type="email"]:valid,
+input[type="password"]:valid {
     background-color: #f9fafb;
     border-color: #E5E7EB;
     border-style:solid;
@@ -178,13 +178,32 @@ input[type="text"] {
     margin-right: 50px;
 }
 
-input[type="text"]:hover {
+input[type="text"]:invalid, input[type="email"]:invalid,
+input[type="password"]:invalid {
+    background-color: #f9fafb;
+    border-color: red;
+    border-style:solid;
+    box-shadow: none;
+    border-radius: 3px;
+    height: 25px;
+    width: 200px;
+    margin-right: 50px;
+}
+
+input[type="text"]:hover, input[type="email"]:hover,
+input[type="password"]:hover {
     border-color: #7e94e6;
     box-shadow: 2px 1px 5px rgb(196, 196, 196);
 }
 
+input[type="text"]:invalid:hover, input[type="email"]:invalid:hover,
+input[type="password"]:invalid:hover {
+    border-color: red;
+    box-shadow: 2px 1px 5px rgb(196, 196, 196);
+}
+
 .login {
-    margin-left: 15%;
+    margin-left: 5%;
     font-weight: bold;
 }
 

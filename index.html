@@ -31,19 +31,19 @@
             <div class="user-inputs-form">
                 <div class="form-side">
                 <label for="firstname">FIRST NAME</label>
-                <input type="text" id="firstname">
+                <input type="text" id="firstname" name="first_name" minlength="2" pattern="[A-Za-z]">
                 <label for="email">EMAIL</label>
-                <input type="text" id="email">
+                <input type="email" id="email" name="email">
                 <label for="password">PASSWORD</label>
-                <input type="text" id="password">
+                <input type="password" id="password" name="password">
                 </div>
                 <div class="form-side">
                 <label for="lastname">LAST NAME</label>
-                <input type="text" id="lastname">
+                <input type="text" id="lastname" name="last_name" minlength="2" pattern="[A-Za-z]">
                 <label for="phone_number">PHONE NUMBER</label>
-                <input type="text" id="phone_number">
+                <input type="text" id="phone_number" pattern="/[0-9]{11}/" name="phone_number">
                 <label for="confirm_password">CONFIRM PASSWORD</label>
-                <input type="text" id="confirm_password">
+                <input type="password" id="confirm_password" name="confirm_password">
               </div>
               </div>
             </div>
