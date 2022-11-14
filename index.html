@@ -10,9 +10,9 @@
 <body>
     <div>
         <img class="left-side-picture" src="plant.jpg" alt="Background image with leafy plants.">
-        <div>
+        <div class="logo-background">
             <img src="odin-lined.png" alt="page logo">
-            <div>ODIN</div>
+            <div class="logo">ODIN</div>
         </div>
     </div>
     <div>
@@ -26,28 +26,33 @@
             </div>
         </header>
         <fieldset>
-            <legend>Let's do this!</legend>
+            <div>
+                <legend>Let's do this!</legend>
             <div class="user-inputs-form">
                 <div class="form-side">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
+                <label for="firstname">FIRST NAME</label>
+                <input type="text" id="firstname">
+                <label for="email">EMAIL</label>
+                <input type="text" id="email">
+                <label for="password">PASSWORD</label>
+                <input type="text" id="password">
+                </div>
+                <div class="form-side">
+                <label for="lastname">LAST NAME</label>
+                <input type="text" id="lastname">
+                <label for="phone_number">PHONE NUMBER</label>
+                <input type="text" id="phone_number">
+                <label for="confirm_password">CONFIRM PASSWORD</label>
+                <input type="text" id="confirm_password">
               </div>
-              <div class="form-side">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
               </div>
             </div>
-            <button type="submit">Create Account</button>
+            <div>
+                <button type="submit">Create Account</button>
+            </div>
         </fieldset>
-        <div>Already have an account? <a href="www.theodinproject.com">Log in</a></div>
+         <div class="login">Already have an account? <a href="www.theodinproject.com">Log in</a>
+        </div>
     </div>
 </body>
 </html>
